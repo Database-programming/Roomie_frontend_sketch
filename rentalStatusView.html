@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대여 정보 확인</title>
+    <link rel="stylesheet" href="rentalStatusView.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 상단 (Header) -->
+            <div class="header">
+                <a href="#" class="back-btn"><img src="images/left.png" alt="Back" class="back-img"></a> <!-- 뒤로 가기 버튼 이미지 -->
+            </div>
+
+        <div class="content">
+            <h2 class="title">대여 정보 확인</h2>
+
+            <!-- Static Info Section -->
+            <div class="info">
+                <div class="info-row">
+                    <span class="label">물품명</span>
+                    <span class="value" id="item-name">계산기</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">대여 제공자</span>
+                    <span class="value" id="provider">○○관 ○○호 김둘리</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">대여 요청자</span>
+                    <span class="value" id="requester">○○관 ○○호 홍길동</span>
+                </div>
+            </div>
+
+            <!-- Non-editable Fields -->
+            <div class="form-container">
+                <div class="store-info">
+                    <label for="store">대여 제공 상점</label>
+                    <div class="select-container non-editable">
+                        <img src="images/roomie.png" alt="Roomie Icon" class="roomie-img">
+                        <span id="store">300 루미</span>
+                    </div>
+                </div>
+
+                <div class="location-group">
+                    <div class="input-group">
+                        <label for="rental-place">대여 장소</label>
+                        <div class="value-box">1층 로비</div>
+                    </div>
+                    <div class="input-group">
+                        <label for="return-place">반납 장소</label>
+                        <div class="value-box">1층 식당</div>
+                    </div>
+                </div>
+
+                <div class="date-group">
+                    <div class="input-group">
+                        <label for="rental-date">대여 날짜</label>
+                        <div class="value-box">2024-09-10</div>
+                    </div>
+                    <span class="date-separator">~</span>
+                    <div class="input-group">
+                        <label for="return-date">반납 날짜</label>
+                        <div class="value-box">2024-09-24</div>
+                    </div>
+                </div>
+
+                <button class="start-rental-btn">반납 진행</button>
+            </div>
+            <div class="nav">
+                <!-- 하단 (네비게이션바) -->
+                <nav class="navbar">
+                    <a href="#" class="nav-item"><img src="images/message.png" alt="Mail"></a>
+                    <a href="#" class="nav-item"><img src="images/home.png" alt="Home"></a>
+                    <a href="#" class="nav-item"><img src="images/search.png" alt="Search"></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
